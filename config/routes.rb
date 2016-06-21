@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  resources :products, only: [:new, :show]
+
   devise_for :users
   get "static_pages/home"
   get "static_pages/help"
