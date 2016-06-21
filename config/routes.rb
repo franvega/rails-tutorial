@@ -1,6 +1,8 @@
 require 'resque/server'
 
 SampleApp::Application.routes.draw do
+  resources :products, only: [:new, :show]
+
   devise_for :users
   resources :parkings
 
