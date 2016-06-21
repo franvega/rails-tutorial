@@ -163,15 +163,9 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (2.5.3)
       coffee-rails
-<<<<<<< HEAD
-    tzinfo (0.3.49)
-    uglifier (3.0.0)
-      execjs (>= 0.3.0, < 3)
+    tzinfo (0.3.50)
     vegas (0.1.11)
       rack (>= 1.0.0)
-=======
-    tzinfo (0.3.50)
->>>>>>> 808f83ca918951525c81d71ff4204651af01fded
     warden (1.2.6)
       rack (>= 1.0)
     websocket (1.0.7)
