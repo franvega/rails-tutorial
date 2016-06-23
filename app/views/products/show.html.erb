@@ -1,0 +1,12 @@
+<%= provide(:title, 'Product') %>
+<div class="center hero-unit">
+  <h1>Welcome to the Sample App</h1>
+
+  <h2>
+    Ficha del producto
+  </h2>
+
+  <span> <%= @product.name %> </span>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
