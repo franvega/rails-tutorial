@@ -1,0 +1,24 @@
+<% if @parking.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@parking.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+    <ul>
+    <% @parking.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="row">
+  <span>Update your parking</span>
+  <div class="span6 offset3">
+    <%= form_for(@parking) do |f| %>
+
+      <%= f.label :address %>
+      <%= f.text_field :address %>
+
+      <%= f.submit "Update parking", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

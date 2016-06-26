@@ -1,6 +1,8 @@
 SampleApp::Application.routes.draw do
   devise_for :users
   resources :users
+  resources :products
+  resources :parkings
   get 'static_pages/about'
   get 'static_pages/home'
 

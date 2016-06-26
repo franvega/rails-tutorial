@@ -17,7 +17,15 @@ describe 'Parking pages' do
       it "should not create a parking" do
         expect { click_button 'Create my account' }.not_to change(Parking, :count)
       end
+    end
+  end
 
+  describe 'edit' do
+    let(:parking) { FactoryGirl.create(:parking) }
+    before { visit edit_parking_path(parking) }
+
+    describe 'page' do
+      it { should have_content('Update your parking') }
     end
   end
 end

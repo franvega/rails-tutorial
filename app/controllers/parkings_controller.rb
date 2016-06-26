@@ -5,6 +5,10 @@ class ParkingsController < ApplicationController
     @parking = Parking.find(params[:id])
   end
 
+  def edit
+    @parking = Parking.find(params[:id])
+  end
+
   def new
     @parking = Parking.new
   end

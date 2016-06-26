@@ -15,4 +15,13 @@ describe "ProductPages" do
 
     it { should have_content(product.name) }
   end
+
+  describe 'product creation' do
+    before { visit product_path }
+
+    describe 'with invalid information' do
+      
+
+    end
+  end
 end

@@ -8,5 +8,4 @@ describe User do
   subject { @user }
 
   before { @user.save }
-  its(:id) { should_not be_nil }
 end
